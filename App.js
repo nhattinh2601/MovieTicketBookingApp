@@ -11,6 +11,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Home from './src/components/Home/Home';
 import Ionic from 'react-native-vector-icons/Ionicons';
 import MyTickets from './src/components/MyTickets/MyTickets';
+import MovieDetails from './src/components/MovieDetails/MovieDetails';
 
 const App = () => {
   const Stack = createNativeStackNavigator();
@@ -72,6 +73,7 @@ const App = () => {
           headerShown: false,
         }}>
         <Stack.Screen name="BottomTabs" component={BottomTabs} />
+        <Stack.Screen name="MovieDetails" component={MovieDetails} />
       </Stack.Navigator>
     </NavigationContainer>
   );
