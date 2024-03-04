@@ -1,9 +1,13 @@
 import {View, Text} from 'react-native';
 
-export default function MovieDetails() {
+const MovieDetails = ({route, navigation}) => {
+  const {movieId} = route.params;
   return (
     <View>
-      <Text>Movie Details</Text>
+      <Text>MoviesDetails {movieId}</Text>
     </View>
   );
-}
+};      
+
+export default MovieDetails;
+                                                                                           

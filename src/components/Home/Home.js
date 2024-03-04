@@ -259,7 +259,7 @@ const Home = ({navigation}) => {
               <TouchableOpacity
                 activeOpacity={0.9}
                 onPress={() =>
-                  navigation.navigate('MovieDetails')
+                  navigation.navigate('MovieDetails', {movieId: item.id})
                 }
                 style={{
                   backgroundColor: 'transparent',
